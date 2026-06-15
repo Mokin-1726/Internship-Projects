@@ -1,38 +1,69 @@
-import { resume } from '../data/resume';
-import type { Resume } from '@/types/resume'; // 👈 ADD THIS
+import { Resume } from "@/types/resume";
 
-const typedResume: Resume = resume; // 👈 ADD THIS
+export const resume: Resume = {
+  name: "Mokin S B",
+  role: "Full Stack Developer",
+  company: "SBS Technologies",
+  location: "Karur, Tamil Nadu",
+  email: "mokinsb1@gmail.com",
+  phone: "+91 82484 69181",
 
-export default function Experience() {
-  return (
-    <section className="bg-white rounded-3xl shadow p-8">
-      
-      <h2 className="text-2xl font-bold mb-6">
-        Experience
-      </h2>
+  summary:
+    "Passionate software developer with expertise in web development, AI solutions, cloud computing, mobile applications, and digital transformation.",
 
-      {typedResume.experience.map((job, index: number) => (
-        <div key={index} className="mb-6">
-          
-          <h3 className="font-bold text-lg text-gray-900">
-            {job.title}
-          </h3>
+  skills: [
+    "HTML",
+    "CSS",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "PHP",
+    "MySQL",
+    "Tailwind CSS",
+    "AWS",
+    "Python",
+    "AI & Machine Learning",
+  ],
 
-          <p className="text-blue-600 font-medium">
-            {job.company}
-          </p>
+  experience: [
+    {
+      title: "Internship - Web Development (Next.js)",
+      company: "SBS Technologies",
+      period: "June 2026 - June 2026",
+      description:
+        "Learning Next.js to build dynamic web applications and enhance frontend development skills.",
+    },
+    {
+      title: "Student Ambassador",
+      company: "GirlScript Summer of Code",
+      period: "May 2026 - August 2026",
+      description:
+        "Promoted and supported the GirlScript Summer of Code program, engaging with the community and providing technical assistance.",
+    },
+  ],
 
-          <p className="text-gray-500 text-sm">
-            {job.period}
-          </p>
+  education: [
+    {
+      degree: "B.E. - Computer Science and Engineering",
+      institution: "M.Kumarasamy College of Engineering, Karur",
+    },
+    {
+      degree: "HSC (+2)",
+      institution:
+        "U.R.C Palaniammal Matriculation Higher Secondary School, Erode",
+    },
+    {
+      degree: "SSLC",
+      institution:
+        "U.R.C Palaniammal Matriculation Higher Secondary School, Erode",
+    },
+  ],
 
-          <p className="mt-2 text-gray-700 leading-relaxed">
-            {job.description}
-          </p>
-
-        </div>
-      ))}
-      
-    </section>
-  );
-}
+  projects: [
+    "Personal Portfolio",
+    "Gym Membership Management",
+    "Quiz App Generator",
+    "Letter Frequency Counter",
+  ],
+};
