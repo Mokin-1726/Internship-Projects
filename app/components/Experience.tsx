@@ -1,11 +1,5 @@
 import { resume } from '../data/resume';
-
-type Experience = {
-  title: string;
-  company: string;
-  period: string;
-  description: string;
-};
+import type { Resume } from '../types/resume'; // adjust path if needed
 
 export default function Experience() {
   return (
@@ -15,27 +9,29 @@ export default function Experience() {
         Experience
       </h2>
 
-      {resume.experience.map((job: Experience, index: number) => (
-        <div key={index} className="mb-6">
-          
-          <h3 className="font-bold text-lg text-gray-900">
-            {job.title}
-          </h3>
+      {resume.experience.map(
+        (job: Resume["experience"][number], index: number) => (
+          <div key={index} className="mb-6">
+            
+            <h3 className="font-bold text-lg text-gray-900">
+              {job.title}
+            </h3>
 
-          <p className="text-blue-600 font-medium">
-            {job.company}
-          </p>
+            <p className="text-blue-600 font-medium">
+              {job.company}
+            </p>
 
-          <p className="text-gray-500 text-sm">
-            {job.period}
-          </p>
+            <p className="text-gray-500 text-sm">
+              {job.period}
+            </p>
 
-          <p className="mt-2 text-gray-700 leading-relaxed">
-            {job.description}
-          </p>
+            <p className="mt-2 text-gray-700 leading-relaxed">
+              {job.description}
+            </p>
 
-        </div>
-      ))}
+          </div>
+        )
+      )}
       
     </section>
   );
