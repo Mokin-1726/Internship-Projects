@@ -299,6 +299,142 @@ export default function ResumePage() {
                 </div>
                   
                 </div>
+                <div className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
+                  <h3 className="text-white xl font-bold mb-5">
+                Courses
+                  </h3>
+                  <div>
+                  <h4 className="text-white 500 font-bold">
+                  NPTEL - Introduction to Internet of Things
+                  </h4>
+                  <p className="text-blue-600">
+                    IIT Kharagpur
+                  </p>
+                  <p className="text-white 600">
+                    71%
+                  </p>
+                  <p className="text-blue-600">
+                    Elite
+                  </p>
+                  <p className="text-white 600">
+                    2025
+                  </p>
+                  <a href="/certificates/nptel iot.pdf" target="_blank">
+                  <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
+                  </a>
+                  </div>
+                  <div className="py-3">
+                  <h4 className="text-white 500 font-bold">
+                  NPTEL - Human Computer Interaction
+                  </h4>
+                  <p className="text-blue-600">
+                    IIT Delhi
+                  </p>
+                  <p className="text-white 600">
+                    95%
+                  </p>
+                  <p className="text-blue-600">
+                    Elite + Gold
+                  </p>
+                  <p className="text-white 600">
+                    2026
+                  </p>
+                  <a href="/certificates/nptel hci.pdf" target="_blank">
+                  <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
+                  </a>
+                  </div>
+                </div>
+                <div className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
+                <h3 className="text-white 600 font-bold">
+                  Achievements
+                </h3>
+                <div className="py-3">
+                  <h4 className="text-white 500 font-bold">
+                  Git and GitHub Workshop
+                  </h4>
+                  <p className="text-blue-600">
+                    PrisolTech
+                  </p>
+                  <p className="text-red-600">
+                    Participation
+                  </p>
+                  <p className="text-white 600">
+                    2025
+                  </p>
+                  <a href="/certificates/git and github workshop certificate.jpg" target="_blank">
+                  <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
+                  </a>
+                </div>
+                <div className="py-3">
+                  <h4 className="text-white 500 font-bold">
+                  AI Tools Workshop
+                  </h4>
+                  <p className="text-blue-600">
+                    FewInfos
+                  </p>
+                  <p className="text-red-600">
+                    Participation
+                  </p>
+                  <p className="text-white 600">
+                    2025
+                  </p>
+                  <a href="/certificates/ai tools certificate.jpg" target="_blank">
+                  <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
+                  </a>
+                </div>
+                <div className="py-3">
+                  <h4 className="text-white 500 font-bold">
+                  Sitespark - Website Creation
+                  </h4>
+                  <p className="text-blue-600">
+                    MKCE - CSE DEPT
+                  </p>
+                  <p className="text-red-600">
+                    Participation
+                  </p>
+                  <p className="text-white 600">
+                    2025
+                  </p>
+                  <a href="/certificates/sitespark certificate.jpg" target="_blank">
+                  <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
+                  </a>
+                </div>
+                <div className="py-3">
+                  <h4 className="text-white 500 font-bold">
+                  StartIQ - Startup Pitching Event
+                  </h4>
+                  <p className="text-blue-600">
+                    MKCE - Mobile App Development (ISTE)
+                  </p>
+                  <p className="text-red-600">
+                    Participation
+                  </p>
+                  <p className="text-white 600">
+                    2026
+                  </p>
+                  <a href="/certificates/startiq certificate.jpeg" target="_blank">
+                  <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
+                  </a>
+                </div>
+                <div className="py-3">
+                  <h4 className="text-white 500 font-bold">
+                  HackSprint'26
+                  </h4>
+                  <p className="text-blue-600">
+                    K Ramakrishnan College Of Technology
+                  </p>
+                  <p className="text-red-600">
+                    Participation
+                  </p>
+                  <p className="text-white 600">
+                    2026
+                  </p>
+                  <a href="/certificates/hacksprint certificate.jpeg" target="_blank">
+                  <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
+                  </a>
+                </div>
+                </div>
+
                 <div className="bg-black rounded-2xl py-5 w-full max-w-4xl mx-auto transition duration-500 hover:scale-105 hover:rotate-1 ">
                   <h3 className="bg-black text-white font-bold py-3">Gallery</h3>
                   <div> 
@@ -309,9 +445,11 @@ export default function ResumePage() {
                       </div> 
                 </div>
 
+                
           </div>
+          
         </div>
-
+      
       </div>
       <div className="text-white 600">
       <footer><center><small>&copy; 2026 Mokin S B. All rights reserved.</small></center></footer>
