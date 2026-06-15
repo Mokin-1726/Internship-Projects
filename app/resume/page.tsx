@@ -1,5 +1,23 @@
 import Link from "next/link";
 export default function ResumePage() {
+  const skills = [
+    { name: "HTML", level: 90 },
+    { name: "CSS", level: 70 },
+    { name: "Git", level: 85 },
+    { name: "GitHub", level: 93 },
+    { name: "Next.js", level: 50 },
+    { name: "MySQL", level: 85 },
+    { name: "DBMS", level: 75 },
+    { name: "Python", level: 70 },
+    { name: "AI & Machine Learning", level: 60 },
+    { name: "Adaptability", level: 85 },
+    { name: "Leadership", level: 90 },
+    { name: "Time Management", level: 95 },
+    { name: "Decision-Making", level: 85 },
+    { name: "Creative Thinking", level: 80 },
+    { name: "Problem Solving", level: 85 },
+    { name: "Communication", level: 89 },
+  ];
   return (
     <div className="min-h-screen bg-blueviolet-50 animate-fade-in">
       <div><div><div><div><div><Link
@@ -49,6 +67,11 @@ export default function ResumePage() {
               <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
               </a>
             </div>
+            <div className="px-4 py-2 bg-blue-600 text-white 600 font-bold rounded-2xl w-30 h-20 transition duration-300 hover:rotate-360">
+              <a href="/mokin.pdf" download target="_blank">Resume
+              <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
+              </a>
+            </div>
             </div>
               <div>
                 <img src="/mokin-image.jpg" alt="Mokin's Image" className="w-90 h-100 rounded-full object-cover border-6 border-blue-600 transition duration-300 hover:scale-105 hover:rotate-10" />
@@ -68,32 +91,24 @@ export default function ResumePage() {
               </h3>
 
               <div className="text-white space-y-4">
-                {[
-                  "HTML",
-                  "CSS",
-                  "Git",
-                  "GitHub",
-                  "Next.js",
-                  "MySQL",
-                  "DBMS",
-                  "Python",
-                  "AI & Machine Learning",
-                  "Adaptability",
-                  "Leadership",
-                  "Time Management",
-                  "Decision-Making",
-                  "Creative thinking",
-                  "Problem Solving",
-                  "Communication"
-                ].map((skill) => (
-                  <div key={skill}>
-                    <span>{skill}</span>
-                    <div className="h-2 bg-white-200 rounded-full mt-1">
-                      <div className="h-2 bg-blue-600 rounded-full w-[90%]" />
+                {skills.map((skill) => (
+                  <div key={skill.name}>
+
+                    <div className="flex justify-between mb-1">
+                      <span>{skill.name}</span>
+                      <span>{skill.level}%</span>
                     </div>
+
+                    <div className="h-2 bg-gray-300 rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-blue-600 rounded-full transition-all duration-1000 slide-bar"
+                        style={{ width: `${skill.level}%` }}
+                      />
+                    </div>
+
                   </div>
-                ))}
-              </div>
+                ))}              
+                </div>
             </div>
             
 
@@ -141,7 +156,7 @@ export default function ResumePage() {
             </div>
 
             {/* Languages */}
-            <div className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
+            <div className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-lg transition duration-300 hover:rotate-360">
               <h3 className="text-xl font-bold mb-4">
                 Languages
               </h3>
@@ -166,7 +181,7 @@ export default function ResumePage() {
               <div className="space-y-8 border-l-2 border-blue-500 pl-6">
 
                 <div className="relative">
-                  <div className="absolute -left-[34px] w-4 h-4 bg-blue-600 rounded-full"></div>
+                  <div className="absolute -left-[34px] w-4 h-4 bg-blue-600 rounded-full move-down"></div>
 
                   <h4 className="font-bold text-lg">
                     Internship - Web Development (Next.js)
@@ -186,7 +201,7 @@ export default function ResumePage() {
                 </div>
 
                 <div className="relative">
-                  <div className="absolute -left-[34px] w-4 h-4 bg-blue-600 rounded-full"></div>
+                  <div className="absolute -left-[34px] w-4 h-4 bg-blue-600 rounded-full move-down"></div>
 
                   <h4 className="font-bold text-lg">
                     Student Ambassador

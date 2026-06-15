@@ -35,3 +35,28 @@ body {
 .animate-slide-down {
   animation: slideDown 0.8s ease-out;
 }
+
+@keyframes moveDotDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(120px);
+  }
+}
+
+.move-down {
+  animation: moveDotDown 2s ease-out forwards;
+}
+@keyframes slideBar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slide-bar {
+  animation: slideBar 2s ease-out forwards;
+}

@@ -23,7 +23,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-6">View my Works</h2>
 
         <div className="grid md:grid-cols-3 gap-6  hover:shadow-lg transition">
-          <Link href="/mokin.pdf" target="_blank">
+          <Link href="/mokin.pdf" download target="_blank">
           <Card title="Resume" description="Describes about Mokin's Portfolio." />
           </Link>
 
