@@ -1,4 +1,12 @@
-import {resume} from '../data/resume';
+import { resume } from '../data/resume';
+
+
+type Experience = {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+};
 
 export default function Experience() {
   return (
@@ -8,7 +16,7 @@ export default function Experience() {
         Experience
       </h2>
 
-      {resume.experience.map((job, index: number) => (
+      {resume.experience.map((job: Experience, index: number) => (
         <div key={index} className="mb-6">
           
           <h3 className="font-bold text-lg text-gray-900">
