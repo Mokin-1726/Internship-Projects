@@ -1,4 +1,4 @@
-import { Resume } from "@/types/resume";
+import { Resume } from "../types/resume";
 
 export const resume: Resume = {
   name: "Mokin S B",
