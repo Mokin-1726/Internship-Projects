@@ -1,6 +1,5 @@
 import { resume } from '../data/resume';
 
-
 type Experience = {
   title: string;
   company: string;
