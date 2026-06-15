@@ -1,4 +1,10 @@
-import {resume} from '../data/resume';
+import { resume } from '../data/resume';
+
+
+type Education = {
+  degree: string;
+  institution: string;
+};
 
 export default function Education() {
   return (
@@ -9,7 +15,7 @@ export default function Education() {
       </h2>
 
       <div className="space-y-4">
-        {resume.education.map((item, index: number) => (
+        {resume.education.map((item: Education, index: number) => (
           <div key={index}>
             
             <h3 className="font-semibold text-gray-900">
