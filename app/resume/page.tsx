@@ -67,7 +67,7 @@ export default function ResumePage() {
               <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
               </a>
             </div>
-            <div className="px-4 py-2 bg-blue-600 text-white 600 font-bold rounded-2xl w-30 h-20 transition duration-300 hover:rotate-360">
+            <div className="px-4 py-2 bg-gold-600 text-white 600 font-bold rounded-2xl w-30 h-20 transition duration-300 hover:rotate-360">
               <a href="/mokin.pdf" download target="_blank">Resume
               <img src="/icons/resume.png" alt="Resume img" className="w-6 h-6 rounded-full object cover transition duration-300 hover:scale-125" />
               </a>
