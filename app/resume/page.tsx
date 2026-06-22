@@ -20,19 +20,34 @@ export default function ResumePage() {
   ];
   return (
     <div className="min-h-screen bg-blueviolet-50 animate-fade-in">
-      <div><div><div><div><div><Link
-        href="/"
-        className="mt-10 px-10 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition hover:scale-105 active:scale-95"
-      >
-       Back
-      </Link></div></div></div></div></div>
+      <div className="w-full bg-black px-6 py-4 flex items-center justify-between">
+        <h1 className="text-white 600 font-bold">
+          Portfolio
+        </h1>
+        <div className="flex gap-6 text-white font-semibold">
+          <a href="/resume" className="hover:text-blue-400">Home</a>
+          <a href="#about" className="hover:text-blue-400">About</a>
+          <a href="#skills" className="hover:text-blue-400">Skills</a>
+          <a href="#education" className="hover:text-blue-400">Education</a>
+          <a href="#experience" className="hover:text-blue-400">Experience</a>
+          <a href="#projects" className="hover:text-blue-400">Projects</a>
+          <a href="#courses" className="hover:text-blue-400">Courses</a>
+          <a href="#achievements" className="hover:text-blue-400">Achievements</a>
+          <a href="/resume/admin/login"className="px-2 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-700 transition hover:scale-105 active:scale-95">Login</a>
+          <a href="/resume/admin/register"className="px-2 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-700 transition hover:scale-105 active:scale-95">Register</a>
+          <a href="/" className="px-2 py-2 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition hover:scale-105 active:scale-95">Back</a>
+
+          </div>
+      </div>
+      
+      
       <div className="max-w-6xl mx-auto p-6 md:p-10">
         {/* Header */}
         <div className="bg-black rounded-3xl shadow-lg p-8 mb-8 ">
           
           <div className="flex flex-col md:flex-row justify-between items-start gap-6">
             
-            <div>
+            <div id="about">
               <h1 className="text-4xl text-white font-bold hover:text-blue-600 transition">
                 Mokin S B
               </h1>
@@ -85,7 +100,7 @@ export default function ResumePage() {
           <div className="space-y-8 hover:shadow-lg transition">
 
             {/* Skills */}
-            <div className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
+            <div id="skills" className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
               <h3 className="text-white xl font-bold mb-4">
                 Technical and Non-technical Skills
               </h3>
@@ -113,7 +128,7 @@ export default function ResumePage() {
             
 
             {/* Education ✅ FIXED */}
-            <div className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
+            <div id="education" className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
               <h3 className="text-white xl font-bold mb-5">
                 Education
               </h3>
@@ -173,7 +188,7 @@ export default function ResumePage() {
           <div className="lg:col-span-2 space-y-8 hover:shadow-lg transition">
 
             {/* Experience */}
-            <div className="bg-white rounded-3xl shadow-lg p-8  ">
+            <div id="experience" className="bg-white rounded-3xl shadow-lg p-8  ">
               <h3 className="text-2xl font-bold mb-6">
                 Work Experience
               </h3>
@@ -225,7 +240,7 @@ export default function ResumePage() {
             </div>
 
             {/* Projects */}
-            <div className="bg-black rounded-3xl shadow-lg p-8 ">
+            <div id="projects" className="bg-black rounded-3xl shadow-lg p-8 ">
               <h3 className="text-white 2xl font-bold mb-6">
                 Featured Projects
               </h3>
@@ -314,7 +329,7 @@ export default function ResumePage() {
                 </div>
                   
                 </div>
-                <div className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
+                <div id="courses"className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
                   <h3 className="text-white xl font-bold mb-5">
                 Courses
                   </h3>
@@ -359,7 +374,7 @@ export default function ResumePage() {
                   </a>
                   </div>
                 </div>
-                <div className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
+                <div id="achievements" className="bg-black rounded-3xl shadow-lg p-6 hover:shadow-lg transition">
                 <h3 className="text-white 600 font-bold">
                   Achievements
                 </h3>
@@ -449,8 +464,8 @@ export default function ResumePage() {
                   </a>
                 </div>
                 </div>
-
-                <div className="bg-black rounded-2xl py-5 w-full max-w-4xl mx-auto transition duration-500 hover:scale-105 hover:rotate-1 ">
+                <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-black rounded-2xl py-5 transition duration-500 hover:scale-105 hover:rotate-1 ">
                   <h3 className="bg-black text-white font-bold py-3">Gallery</h3>
                   <div> 
                     <video width="100%" controls autoPlay={false} muted className="w-full rounded-lg" > 
@@ -459,6 +474,29 @@ export default function ResumePage() {
                       </video> 
                       </div> 
                 </div>
+                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-black rounded-2xl py-5 transition duration-500 hover:scale-105 hover:rotate-1 ">
+                  <h3 className="bg-black text-white font-bold py-3">Gallery</h3>
+                  <div> 
+                    <video width="100%" controls autoPlay={false} muted className="w-full rounded-lg" > 
+                      <source src="/videos/demo 2.mp4" type="video/mp4" /> 
+                      Your browser does not support the video tag. 
+                      </video> 
+                      </div> 
+                </div>
+                <div className="bg-black rounded-2xl py-5 transition duration-500 hover:scale-105 hover:rotate-1 ">
+                  <h3 className="bg-black text-white font-bold py-3">Gallery</h3>
+                  <div> 
+                    <video width="100%" controls autoPlay={false} muted className="w-full rounded-lg" > 
+                      <source src="/videos/demo 3.mp4" type="video/mp4" /> 
+                      Your browser does not support the video tag. 
+                      </video> 
+                      </div> 
+                </div>
+                </div>
+                
+
 
                 
           </div>
