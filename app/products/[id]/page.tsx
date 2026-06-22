@@ -25,6 +25,9 @@ export default async function ProductDetails({
       <h1 className="text-4xl font-bold mt-6">{product.name}</h1>
       <p className="text-2xl text-blue-600 mt-3">₹{product.price}</p>
       <p className="mt-4 text-gray-700">{product.description}</p>
+      <div className="py-5">
+        <a href="/products" className="px-2 py-2 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition hover:scale-105 active:scale-95">Back</a>
+      </div>
     </div>
   );
 }
