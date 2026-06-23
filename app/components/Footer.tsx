@@ -5,7 +5,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 text-center">
         
         <p className="text-sm">
-          © {new Date().getFullYear()} Babu Subramanian. All rights reserved.
+          © {new Date().getFullYear()} Mokin S B. All rights reserved.
         </p>
 
         <p className="text-gray-400 text-xs mt-2">
